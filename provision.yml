@@ -1,0 +1,9 @@
+---
+- name: Configure Computer with ffmpeg and dependences
+  hosts: nodes
+  user: 'vagrant'
+  roles:
+    - common
+    - ffmpeg
+  tags:
+    - ffmpeg-setup
